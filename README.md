@@ -2,15 +2,15 @@ Based on Hugo Holden's "FITTING AN EGA CARD TO AN IBM 5155" from 2016.
 
 This plugs onto an EGA card's feature connector, such as the IBM EGA card.
 
-It adds a crystal clear monochrome composite output in two places.
+It adds a crystal clear monochrome composite output in two places, untainted by the colour subcarrier.
 
-*One internal 4-pin header, meant for the IBM 5155's internal amber CRT, which takes a standard composite video input.
+* One internal 4-pin header, meant for the IBM 5155's internal amber CRT, which takes a standard composite video input.
 
-*And one at the rear of the EGA card, on one of the usually unconnected RCA jacks.
+* And one at the rear of the EGA card, on one of the usually unconnected RCA jacks.
 
-The rear RCA jack output only applies to cards that have this RCA jack connected to the feature connector (P1 on the IBM EGA card: the top RCA jack).
+  * The rear RCA jack output only applies to cards that have this RCA jack connected to the feature connector (P1 on the IBM EGA card: the top RCA jack).
 
-
+You must set the card to CGA-compatible mode. If the card tries to output EGA-Hi-Res modes, the composite output will be unsupported by most monitors.
 
 Simplified the schematic to reduce BoM and board size.
 
@@ -39,10 +39,10 @@ BoM:
 |R10|1kΩ|
 
 
-*All parts are through-hole.
-*U1 and U2 can be replaced by 74, 74LS, 74S, 74F, 74ACT.
-*U2 can be replaced with a 74HCT32 - it will work the same.
-*Q1 can be replaced with most general purpose NPN transistors - beware of pinout.
-*Resistor tolerances can be 5% or less.
-*R2 is only needed for the internal 4-pin header output, intended for IBM 5155.
-*R3 is only needed for the rear RCA-jack output (P1 on IBM EGA card).
+* All parts are through-hole.
+* U1 and U2 can be replaced by 74, 74LS, 74S, 74F, 74ACT.
+* U2 can be replaced with a 74HCT32 - it will work the same.
+* Q1 can be replaced with most general purpose NPN transistors - beware of pinout.
+* Resistor tolerances can be 5% or less.
+* R2 is only needed for the internal 4-pin header output, intended for IBM 5155.
+* R3 is only needed for the rear RCA-jack output (P1 on IBM EGA card).
